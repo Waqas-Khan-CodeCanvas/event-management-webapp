@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Horizon - Event Management</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Event Horizon</h1>
+        <p>Your Gateway to Memorable Events</p>
+      </header>
+
+      <main>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search events by name or date..."
+          />
+        </div>
+
+        <div class="form-section">
+          <h2>Add New Event</h2>
+          <form id="eventForm">
+            <div class="form-group">
+              <label for="eventName">Event Name *</label>
+              <input
+                type="text"
+                id="eventName"
+                placeholder="Enter event name"
+              />
+              <div class="error-message" id="nameError">
+                Event name is required
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="eventDate">Event Date *</label>
+              <input type="date" id="eventDate" />
+              <div class="error-message" id="dateError">
+                Event date is required
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="eventDescription">Event Description *</label>
+              <textarea
+                id="eventDescription"
+                placeholder="Describe your event..."
+              ></textarea>
+              <div class="error-message" id="descError">
+                Event description is required
+              </div>
+            </div>
+
+            <button type="submit" class="btn-add">Add Event</button>
+          </form>
+        </div>
+
+        <div class="events-section">
+          <h2>Upcoming & Past Events</h2>
+          <div id="eventsGrid" class="events-grid"></div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Event Horizon | Created by Waqas khan</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
