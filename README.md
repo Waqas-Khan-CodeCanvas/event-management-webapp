@@ -13,7 +13,7 @@ A modern, responsive web application for managing and displaying events. Built w
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://yourusername.github.io/event-horizon)
+[View Live Demo](https://waqas-khan-codecanvas.github.io/event-management-webapp/)
 
 ## 🛠️ Technologies
 
@@ -36,7 +36,7 @@ git clone https://github.com/yourusername/event-horizon.git
 2. Go to **Settings** → **Pages**
 3. Select **main** branch
 4. Click **Save**
-5. Access at `https://yourusername.github.io/event-horizon`
+5. Access at `https://github.com/Waqas-Khan-CodeCanvas/event-management-webapp`
 
 ## 💡 Usage
 
@@ -47,7 +47,7 @@ git clone https://github.com/yourusername/event-horizon.git
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@Waqaskhancodecanvas](https://github.com/Waqas-Khan-CodeCanvas/)
 
 ## 📄 License
 
