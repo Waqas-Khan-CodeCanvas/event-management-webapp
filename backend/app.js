@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-
 const usersData = require("./MOCK_DATA.json");
+const fs = require('fs');
+// middlewares 
 express(express.json());
+app.use(express.urlencoded({extended:false}))
 
 // GET all users in html 
 app.get("/users", (req, res) => {
@@ -52,6 +54,23 @@ app.get("/api/users", (req, res) => {
     });
   req.end();
 });
+
+app.post("/api/users/", (req , res) => {
+    const body = req.body
+    const id = usersData.length + 1 
+    usersData.push({id , ...body})
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(usersData) , (err, data) => {
+        if(!err){
+            return res.status(201).json({status:"success" , id:id})
+        }else{
+            return res.status(500).json({status:"error" , message: err})
+
+        }
+    }
+    )
+
+}
+)
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
