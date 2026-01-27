@@ -1,0 +1,9 @@
+GET -> getAlluser in html http://localhost:3000/users
+GET -> getAlluser in json http://localhost:3000/api/users
+
+
+GET -> getUserById json http://localhost:3000/api/users/:id
+POST -> createUser json http://localhost:3000/api/users/
+PUT -> updateUserById json http://localhost:3000/api/users/:id
+DELETE -> deleteUserById json http://localhost:3000/api/users/:id
+ 
